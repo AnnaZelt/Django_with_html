@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="json-data"></div>
+    <script>
+        const MY_SERVER = "http://127.0.0.1:8000";
+        axios.get(MY_SERVER).then(res => console.log(res.data))
+    </script>
+
+</body>
+</html>
